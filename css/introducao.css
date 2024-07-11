@@ -1,0 +1,52 @@
+.introducao {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px 55px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:  100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.introducao h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.introducao h1::before {    /*COLOCA ELEMENTO DETALHE ANTES DO H1*/
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url("../img/detalhe.svg") no-repeat center;
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    left: -40px;
+}
+
+.introducao p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+@media (max-width: 1000px) {
+    .introducao {
+        gap: 75px;
+    }
+    .introducao h1 {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao {
+        gap: 50px;
+    }
+    .introducao h1 {
+        font-size: 2.8rem;
+    }
+}

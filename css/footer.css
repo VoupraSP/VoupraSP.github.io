@@ -1,0 +1,39 @@
+.footer__container {
+    background: black;
+}
+
+.footer__container .footer__content {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 55px 20px;
+    gap: 100px;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    align-items: center;
+}
+
+.footer__content .footer__text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #525252;
+}
+
+.footer__content .footer__contact {
+    width: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+
+}
+
+.footer__content .footer__contact a {
+    font-size: 1.45rem;
+    color: white;
+    padding: 5px;
+}
+
+.footer__content .footer__direitos {
+    grid-column: span 2;
+    text-align: center;
+    color: aliceblue;
+}
